@@ -15,7 +15,7 @@ struct User {
 }
 
 //Database connection string
-const DB_URL: &str = !env["DATABASE_URL"];
+const DB_URL: &str = env!("DATABASE_URL");
 
 //Constants
 const OK_RESPONSE: &str = "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n";
